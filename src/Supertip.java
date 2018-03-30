@@ -17,7 +17,18 @@ abstract public class Supertip {
   }
 
   public final int controlDigit() {
-    return 0;
+    int x = this.value;
+
+    while(x >= 10) {
+      int sum = 0;
+      while(x != 0) {
+        sum += x % 10;
+        sum /= 10;
+      }
+      x = sum;
+    }
+
+    return x;
   }
 
   public final boolean controlEquals(Supertip b) {

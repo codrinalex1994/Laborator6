@@ -2,13 +2,13 @@ abstract public class Supertip {
 
   double value;
 
-  abstract public void add(Supertip b);
+  abstract public Supertip add(Supertip b);
 
-  abstract public void multiply(Supertip b);
+  abstract public Supertip multiply(Supertip b);
 
-  abstract public void testType(Supertip b);
+  abstract public Supertip testType(Supertip b);
 
-  abstract public void checkMe();
+  abstract public boolean checkMe();
 
   public final boolean equals(Supertip b) {
     if(this.value == b.value)

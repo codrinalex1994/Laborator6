@@ -1,18 +1,29 @@
-public class Supertip {
+abstract public class Supertip {
 
-  public void add(Supertip b) {
+  double value;
+
+  abstract public void add(Supertip b);
+
+  abstract public void multiply(Supertip b);
+
+  abstract public void testType(Supertip b);
+
+  abstract public void checkMe();
+
+  public final boolean equals(Supertip b) {
+    if(this.value == b.value)
+      return true;
+    else return false;
   }
 
-  public void multiply(Supertip b) {
+  public final double controlDigit(double value) {
+    return 0;
   }
 
-  public void equals(Supertip b) {
-  }
-
-  public void controlDigit() {
-  }
-
-  public void controlEquals(Supertip b) {
+  public final boolean controlEquals(Supertip b) {
+    if(controlDigit(this.value) == controlDigit(b.value))
+        return true;
+    else return false;
   }
 
 }

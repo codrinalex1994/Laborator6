@@ -1,11 +1,11 @@
 public class PrimeNumber extends Supertip {
 
-    public void checkMe() {
+    public boolean checkMe() {
 
     }
 
 
-    public PrimeNumber(double x) {
+    public PrimeNumber(int x) {
         if(!checkIfPrime(x)) {
             throw new RuntimeException("number is not prime");
         }
@@ -14,34 +14,40 @@ public class PrimeNumber extends Supertip {
     }
 
     public Supertip add(Supertip b) {
-        if(!checkIfPrime(b)) {
+        if(!checkIfPrime(b.value)) {
             throw new RuntimeException("parameter is not prime");
         }
-        if(!checkIfPrime(this.value + b)) {
+        if(!checkIfPrime(this.value + b.value)) {
             throw new RuntimeException("sum is not prime");
         }
 
-        this.value += b;
+        this.value += b.value;
     }
 
     public Supertip multiply(Supertip b) {
-        if(!checkIfPrime(b)) {
+        if(!checkIfPrime(b.value)) {
             throw new RuntimeException("parameter is not prime");
         }
-        if(!checkIfPrime(this.value * b)) {
+        if(!checkIfPrime(this.value * b.value)) {
             throw new RuntimeException("product is not prime");
         }
 
-        this.value *= b;
+        this.value *= b.value;
     }
 
-    public double controlDigit() {
-        double x = this.value;
-        while(x != (int)x) {
-            x *= 10;
+    public int controlDigit() {
+        int x = this.value;
+
+        while(x >= 10) {
+            int sum = 0;
+            while(x != 0) {
+                sum += x % 10;
+                sum /= 10;
+            }
+            x = sum;
         }
 
-
+        return x;
     }
 
     public void controlEquals(Supertip b) {

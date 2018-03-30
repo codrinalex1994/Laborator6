@@ -16,7 +16,7 @@ abstract public class Supertip {
     else return false;
   }
 
-  public final int controlDigit(double value) {
+  public final int controlDigit() {
     return 0;
   }
 

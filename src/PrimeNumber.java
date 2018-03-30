@@ -4,6 +4,15 @@ public class PrimeNumber extends Supertip {
 
     }
 
+    private boolean checkIfPrime(int value) {
+        for(int i = 2; i < value / 2; ++i) {
+            if(value % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
 
     public PrimeNumber(int x) {
         if(!checkIfPrime(x)) {

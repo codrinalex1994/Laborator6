@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e31fb42-e05b-45fc-9170-8b7860633b93" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrimeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Supertip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supertip.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Supertip.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Supertip.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Supertip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#389#390#0" expanded="true" />
                 <element signature="e#407#408#0" expanded="true" />
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrimeNumber.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PrimeNumber.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PrimeNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -65,8 +64,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/PerfectNumber.java" />
-        <option value="$PROJECT_DIR$/src/PrimeNumber.java" />
         <option value="$PROJECT_DIR$/src/Supertip.java" />
+        <option value="$PROJECT_DIR$/src/PrimeNumber.java" />
       </list>
     </option>
   </component>
@@ -194,12 +193,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522387211679</updated>
-      <workItem from="1522387853263" duration="2150000" />
+      <workItem from="1522387853263" duration="2246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2150000" />
+    <option name="totallyTimeSpent" value="2246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -269,21 +268,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrimeNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Supertip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#389#390#0" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrimeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>

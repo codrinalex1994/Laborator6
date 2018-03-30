@@ -43,4 +43,9 @@ public class PrimeNumber extends Supertip {
 
         return new PrimeNumber(this.value * b.value);
     }
+
+
+    public boolean testType(Supertip b) {
+        return b instanceof PrimeNumber;
+    }
 }

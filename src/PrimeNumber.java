@@ -1,3 +1,7 @@
+import java.lang.RuntimeException;
+
+
+
 public class PrimeNumber extends Supertip {
 
     public boolean checkMe() {

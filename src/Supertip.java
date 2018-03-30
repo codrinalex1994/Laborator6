@@ -48,7 +48,7 @@ abstract public class Supertip {
   }
 
   public final boolean controlEquals(Supertip b) {
-      if (controlDigit(this.value) == controlDigit(b.value))
+      if (this.controlDigit() == b.controlDigit())
           return true;
       else return false;
   }

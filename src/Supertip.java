@@ -6,7 +6,7 @@ abstract public class Supertip {
 
   abstract public Supertip multiply(Supertip b);
 
-  abstract public Supertip testType(Supertip b);
+  abstract public boolean testType(Supertip b);
 
   abstract public boolean checkMe();
 
@@ -16,6 +16,7 @@ abstract public class Supertip {
     else return false;
   }
 
+<<<<<<< HEAD
   private int repeat(int v1){
     int v2 = v1;
     int x=0;
@@ -31,6 +32,20 @@ abstract public class Supertip {
     while(x>=10){
       x = repeat(x);
     }
+=======
+  public final int controlDigit() {
+    int x = this.value;
+
+    while(x >= 10) {
+      int sum = 0;
+      while(x != 0) {
+        sum += x % 10;
+        sum /= 10;
+      }
+      x = sum;
+    }
+
+>>>>>>> origin/master
     return x;
   }
 

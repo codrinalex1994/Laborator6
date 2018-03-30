@@ -1,6 +1,6 @@
 abstract public class Supertip {
 
-  double value;
+  int value;
 
   abstract public Supertip add(Supertip b);
 
@@ -16,7 +16,7 @@ abstract public class Supertip {
     else return false;
   }
 
-  public final double controlDigit(double value) {
+  public final int controlDigit() {
     return 0;
   }
 

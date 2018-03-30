@@ -10,8 +10,16 @@ public class PerfectNumber implements Supertip {
         return this;
     }
 
-    public Supertip multiply(Supertip s) {
-        return (this.value *= s.value)
+    public Supertip multiply(Supertip s)
+    {
+        this.value *= s.value;
+        return this;
+    }
+
+    public boolean testType(Supertip b) {
+        if(b.getClass().isInstance(PerfectNumber.class))
+            return true;
+        return false;
     }
 
 

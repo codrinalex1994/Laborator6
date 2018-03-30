@@ -6,7 +6,7 @@ abstract public class Supertip {
 
   abstract public Supertip multiply(Supertip b);
 
-  abstract public Supertip testType(Supertip b);
+  abstract public boolean testType(Supertip b);
 
   abstract public boolean checkMe();
 

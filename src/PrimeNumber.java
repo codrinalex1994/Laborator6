@@ -1,10 +1,10 @@
 public class PrimeNumber extends Supertip {
 
     public boolean checkMe() {
-
+        return checkIfPrime(this.value);
     }
 
-    private boolean checkIfPrime(int value) {
+    private static boolean checkIfPrime(int value) {
         for(int i = 2; i < value / 2; ++i) {
             if(value % i == 0)
                 return false;

@@ -26,12 +26,6 @@ abstract public class Supertip {
     return x;
   }
 
-  public final int controlDigit(int value) {
-      int x = value;
-      while (x >= 10) {
-          x = repeat(x);
-      }
-  }
   public final int controlDigit() {
       int x = this.value;
 

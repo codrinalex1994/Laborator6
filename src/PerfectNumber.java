@@ -1,4 +1,4 @@
-public class PerfectNumber implements Supertip {
+public class PerfectNumber extends Supertip {
     double value;
 
     PerfectNumber(int value) {
@@ -21,31 +21,6 @@ public class PerfectNumber implements Supertip {
             return true;
         return false;
     }
-
-    public final int controlDigit() {
-        int sum = 0;
-        if(value < 10){
-            sum = (int)value;
-        }
-        while (value > 9)
-        {
-            while (value > 0) {
-                sum += value % 10;
-                value /= 10;
-            }
-            value = sum;
-            sum = 0;
-        }
-        return 0;
-    }
-
-    public final boolean controlEquals(Supertip b) {
-        if(controlDigit(this.value) == controlDigit(b.value))
-            return true;
-        else return false;
-    }
-
-
 
     public boolean checkMe() {
         int divsorsSum = 0;

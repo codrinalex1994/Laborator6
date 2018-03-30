@@ -1,19 +1,19 @@
 public class PalindromNumber extends Supertip {
 
-    public PalindromNumber(double value) {
+    public PalindromNumber(int value) {
         this.value = value;
     }
 
-    public void add(Supertip b) {
+    public Supertip add(Supertip b) {
         this.value += b.value;
     }
-    public void multiply(Supertip b) {
+    public Supertip multiply(Supertip b) {
         this.value *= b.value;
     }
-    public void testType(Supertip b) {
-
+    public boolean testType(Supertip b) {
+        return  true;
     }
-    public void checkMe() {
+    public boolean checkMe() {
         int aux = (int)value;
         boolean valid = true;
         boolean mountain;
@@ -38,7 +38,7 @@ public class PalindromNumber extends Supertip {
                         mountain = false;
                     }
                     else {
-                        //return false;
+                        return false;
                     }
                 }
             } else {
@@ -48,11 +48,11 @@ public class PalindromNumber extends Supertip {
                         mountain = true;
                     }
                     else {
-                        //return false;
+                        return false;
                     }
                 }
             }
         }
-        //return true;
+        return true;
     }
 }

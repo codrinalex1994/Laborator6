@@ -6,9 +6,11 @@ public class PalindromNumber extends Supertip {
 
     public Supertip add(Supertip b) {
         this.value += b.value;
+        return this;
     }
     public Supertip multiply(Supertip b) {
         this.value *= b.value;
+        return this;
     }
     public boolean testType(Supertip b) {
         return  true;

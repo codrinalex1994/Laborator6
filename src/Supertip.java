@@ -16,14 +16,40 @@ abstract public class Supertip {
     else return false;
   }
 
+  private int repeat(int v1){
+    int v2 = v1;
+    int x=0;
+    while(v2>0) {
+      x += v2 % 10;
+      v2 /= 10;
+    }
+    return x;
+  }
+
+  public final int controlDigit(int value) {
+      int x = value;
+      while (x >= 10) {
+          x = repeat(x);
+      }
+  }
   public final int controlDigit() {
-    return 0;
+      int x = this.value;
+
+      while (x >= 10) {
+          int sum = 0;
+          while (x != 0) {
+              sum += x % 10;
+              sum /= 10;
+          }
+          x = sum;
+      }
+
+      return x;
   }
 
   public final boolean controlEquals(Supertip b) {
-    if(controlDigit(this.value) == controlDigit(b.value))
-        return true;
-    else return false;
+      if (controlDigit(this.value) == controlDigit(b.value))
+          return true;
+      else return false;
   }
-
 }

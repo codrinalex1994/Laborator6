@@ -30,7 +30,7 @@ public class PrimeNumber extends Supertip {
             throw new RuntimeException("sum is not prime");
         }
 
-        this.value += b.value;
+        return new PrimeNumber(this.value + b.value);
     }
 
     public Supertip multiply(Supertip b) {
@@ -41,24 +41,11 @@ public class PrimeNumber extends Supertip {
             throw new RuntimeException("product is not prime");
         }
 
-        this.value *= b.value;
+        return new PrimeNumber(this.value * b.value);
     }
 
-    public int controlDigit() {
-        int x = this.value;
 
-        while(x >= 10) {
-            int sum = 0;
-            while(x != 0) {
-                sum += x % 10;
-                sum /= 10;
-            }
-            x = sum;
-        }
-
-        return x;
-    }
-
-    public void controlEquals(Supertip b) {
+    public boolean testType(Supertip b) {
+        return b instanceof PrimeNumber;
     }
 }

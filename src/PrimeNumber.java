@@ -3,21 +3,6 @@ import java.lang.RuntimeException;
 
 
 public class PrimeNumber extends Supertip {
-
-    public boolean checkMe() {
-        return checkIfPrime(this.value);
-    }
-
-    private static boolean checkIfPrime(int value) {
-        for(int i = 2; i < value / 2; ++i) {
-            if(value % i == 0)
-                return false;
-        }
-
-        return true;
-    }
-
-
     public PrimeNumber(int x) {
         if(!checkIfPrime(x)) {
             throw new RuntimeException("number is not prime");
@@ -48,8 +33,27 @@ public class PrimeNumber extends Supertip {
         return new PrimeNumber(this.value * b.value);
     }
 
-
     public boolean testType(Supertip b) {
         return b instanceof PrimeNumber;
+    }
+
+    public boolean checkMe() {
+        return checkIfPrime(this.value);
+    }
+
+
+
+
+    private static boolean checkIfPrime(int value) {
+        if(value >= -1 && value <= 1) {
+            return false;
+        }
+
+        for(int i = 2; i < value / 2; ++i) {
+            if(value % i == 0)
+                return false;
+        }
+
+        return true;
     }
 }
